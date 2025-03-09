@@ -32,11 +32,11 @@ async def on_message(message):
         
         #Tour-help command
         if splitMessage[0] == '!helpFGU':
-        FGUCommandsGuide = discord.Embed()
-        FGUCommandsGudie.title = '***FGU Commands Help***'
-        FGUCommandsGuide.add_field(name = 'Connection Info', value = '_User Name_: zeldaharvestmoon\n_Campaign Name_: LMP0001\n_Password_: LMP0001')
-        FGUCommandsGuide.add_field(name = 'Close Error Console', value = '`/console skip`')
-        FGUCommandsGuide.add_field(name = 'Whisper', value = '`w/ CharacterName ChatMessage`\nTo whisper to the DM, use `w/ GM ChatMessage`')
+            FGUCommandsGuide = discord.Embed()
+            FGUCommandsGudie.title = '***FGU Commands Help***'
+            FGUCommandsGuide.add_field(name = 'Connection Info', value = '_User Name_: zeldaharvestmoon\n_Campaign Name_: LMP0001\n_Password_: LMP0001')
+            FGUCommandsGuide.add_field(name = 'Close Error Console', value = '`/console skip`')
+            FGUCommandsGuide.add_field(name = 'Whisper', value = '`w/ CharacterName ChatMessage`\nTo whisper to the DM, use `w/ GM ChatMessage`')
         await message.channel.send(embed = FGUCommandsGuide)
 
 #-------------------- RUN TTRPG SERVER BOT --------------------#
